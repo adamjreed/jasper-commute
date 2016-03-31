@@ -20,3 +20,9 @@ commute:
   home_address: '123 Home St, Beverly Hills, CA 90210'
   work_address: '456 Work Blvd, Beverly Hills, CA 90210'
 ```
+
+# Trigger phrase
+The plugin listens for the word "commute" so try something like this:
+* How's my commute today?
+* What does my commute look like?
+* Tell me about my commute.
