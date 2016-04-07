@@ -8,7 +8,7 @@ WORDS = ["COMMUTE"]
 
 def handle(text, mic, profile):
     """
-        Responds to user-input, typically speech text, by providing the current 
+        Responds to user-input, typically speech text, by providing the current
         travel time between configured home and work addresses.
 
         Arguments:
@@ -44,7 +44,8 @@ def handle(text, mic, profile):
                               'destinations': work,
                               'departure_time': int(time.time())})
 
-    r = requests.get("https://maps.googleapis.com/maps/api/distancematrix/json", query)
+    r = requests.get("https://maps.googleapis.com" +
+                     "/maps/api/distancematrix/json", query)
     try:
         r.raise_for_status()
     except requests.exceptions.HTTPError:
